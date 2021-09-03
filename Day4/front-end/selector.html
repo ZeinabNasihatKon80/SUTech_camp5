@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    
+    <style>
+        .x1.x2{
+            color: yellowgreen;
+            font-size: 30px;
+        }
+        .box{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            color: springgreen;
+        }
+        .box>p{     /*faghat prye hamin (P)*/
+            color: tan;
+        }
+        .box p{
+            color: violet;      /*roye farzandan ham (P) hay an ra rangy mikonad*/
+        }
+        .brown-box{
+            background-color: brown;
+        }
+        .red-box{
+            background-color: red;
+        }
+        .orange-box{
+            background-color: rgb(78, 6, 138);
+        }
+        .wrappre{
+            margin: 30px;
+        }
+        p{
+            color: slateblue;
+        }
+    </style>
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="wrappre">
+        <div class="box brown-box">
+            <p>box 1</p>
+            <div>
+                <p>part 1</p>
+            </div>
+
+        </div>
+        <div class="box red-box">
+            <p>box 2</p>
+            <div>
+                <p>part 2</p>
+            </div>
+        </div>
+        <div class="box orange-box">
+            <p>box 3</p>
+            <div>
+                <p>part 3</p>
+            </div>
+        </div>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, 
+        eius nostrum asperiores voluptatem assumenda consequuntur adipisci, officia ducimus, magnam minus ipsam perferendis!
+        Ipsam ab officia nemo maxime aperiam consectetur voluptas?
+    </p>
+    <p class="x1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, 
+        eius nostrum asperiores voluptatem assumenda consequuntur adipisci, officia ducimus, magnam minus ipsam perferendis!
+        Ipsam ab officia nemo maxime aperiam consectetur voluptas?
+    </p>
+    <p class="x1 x2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, 
+        eius nostrum asperiores voluptatem assumenda consequuntur adipisci, officia ducimus, magnam minus ipsam perferendis!
+        Ipsam ab officia nemo maxime aperiam consectetur voluptas?
+    </p>
+</body>
+</html>

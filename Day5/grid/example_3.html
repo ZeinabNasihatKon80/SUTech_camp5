@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 3</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-gap: 10px;
+            grid-auto-rows: minmax(100px,auto);
+            justify-items:stretch;
+            align-items: stretch;
+        }
+        .wrapper>div{
+            background-color: darkgray;
+            padding: 10px;
+        }
+        .wrapper>div:nth-child(odd){
+            background-color: lightcoral;
+        }
+        .box1{
+            grid-column: 1/3;
+        }
+        .box2{
+            grid-row: 1/4;
+        }
+        .box3{
+            grid-column: 3/4;
+            grid-row: 1/3;
+        }
+        .box4{
+            grid-row: 3/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="bax1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim voluptatem officiis laborum exercitationem, repellat alias 
+            obcaecati dolorum libero aspernatur sequi magni voluptatum adipisci tempora impedit dignissimos ullam nemo cumque culpa?
+            Lorem ipsum dolor, sit amet  adipisicing elit. Enim voluptatem officiis laborum exercitationem, repellat alias 
+            obcaecati dolorum libero aspernatur sequi magni voluptatum adipisci tempora impedit dignissimos ullam nemo cumque culpa?
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor, sit amet conse sequi magni voluptatum adipisci tempora impedit dignissimos ullam nemo cumque culpa?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim voluptatem officiis laborum exercitationem, repellat alias 
+            obcaecati dolorum libero aspernatur sequi magni voluptatum adipisci tempora impedit dignissimos ullam nemo cumque culpa?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim voluptatem officiis laborum exercitationem, repellat alias 
+            obcaecati dolorum libero aspernatur sequi magni voluptatum adipisci tempora impedit dignissimos ullam nemo cumque culpa?
+        </div>
+        <div class="box3">
+            Lorem ipsum dolor, sit amet consectetur ni voluptatum adipisci tempora impedit dignissimos ullam nemo cumque culpa?
+        </div>
+        <div class="box4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim voluptatem officiis laborum exercitationem, repellat alias 
+            obcaecati dolorum libero aspernatur sequi magni voluptatum adipisci tempora impedit dignissimos ullam nemo cumque culpa?
+            Lorem ipsum dolor, sit amet consectetur i voluptatum adipisci tempora impedit dignissimos ullam nemo cumque culpa?
+        </div>
+        <div class="box5">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim voluptatem officiis laborum exercitationem, repellat alias 
+            obcaecati dolorum libero aspernatur sequmagni voluptatum adipisci tempora impedit dignissimos ullam nemo cumque culpa?
+        </div>
+    </div>
+</body>
+</html>
